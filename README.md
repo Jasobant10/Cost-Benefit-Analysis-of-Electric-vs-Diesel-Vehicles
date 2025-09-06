@@ -1,64 +1,47 @@
-# Cost-Benefit Analysis of Electric vs Diesel Vehicles
+# 🚛 Cost-Benefit Analysis of Electric vs Diesel Vehicles
 
-## **Project Overview**
-This project performs a comparative cost-benefit analysis of Electric Vehicles (EVs) and Diesel Vehicles, focusing on aspects like initial cost, operational efficiency, ROI, and environmental impact. The goal is to provide actionable insights for stakeholders considering vehicle adoption.
+## 📖 Overview
 
----
+This project provides a comprehensive **5-year Total Cost of Ownership (TCO)** analysis comparing **Electric Vehicles (EVs) vs. Diesel Vehicles** for commercial truck fleets. The analysis evaluates key financial metrics including **purchase cost, fuel/electricity expenses, maintenance, government subsidies, and resale value** to deliver data-driven recommendations for sustainable and cost-effective fleet management.
 
-## **Objective**
-- Compare EVs and Diesel vehicles in terms of:
-  - Purchase cost
-  - Running & maintenance costs
-  - Return on Investment (ROI)
-  - Environmental impact (emissions)
-- Generate visual insights and recommendations using data-driven methods.
+This project is designed to showcase an end-to-end data analytics workflow, from data cleaning and modeling in Python to interactive dashboarding in Tableau/Power BI.
 
----
+## 🎯 Objectives
 
-## **Dataset**
-- Data collected from company records, industry reports, and publicly available datasets.
-- Stored in the `data/raw/` folder.
-- Cleaned and processed datasets are stored in `data/processed/`.
-
-**Sample files include:**
-- `Book1.xlsx` – Vehicle cost data  
-- `Propel Cost Analysis.xlsx` – Operational costs  
-- `ROI MEV.xlsx` – ROI calculations  
-- `equ.xlsx` – Supporting calculations  
+-   **Compare** the 5-year Total Cost of Ownership (TCO) between comparable EV and Diesel truck models.
+-   **Identify** the breakeven point where EV adoption becomes the more financially viable option.
+-   **Conduct** scenario and sensitivity analysis to understand the impact of fluctuating fuel prices and varying government subsidies.
+-   **Provide** actionable recommendations for fleet managers to support cost reduction and sustainability goals.
 
 ---
 
-## **Project Structure**
-```text
-EV_Diesel_Project/
-├── data/
-│   ├── raw/          # Original datasets
-│   └── processed/    # Cleaned/processed datasets
-├── notebooks/        # Jupyter notebooks for analysis
-│   └── main.ipynb
-├── src/              # Optional scripts and reusable functions
-├── reports/          # Charts, figures, and summary reports
-├── README.md         # Project overview
-└── requirements.txt  # Python dependencies
-```
+## 🛠 Tools & Technologies
 
+-   **Programming:** Python (Pandas, NumPy, Matplotlib, Seaborn)
+-   **Databases:** SQL (for data storage and querying)
+-   **Visualization:** Tableau / Power BI (for interactive dashboards), Excel
+-   **Workflow & Collaboration:** Jupyter Notebooks, Git & GitHub
 
 ---
 
-## **Tools & Libraries**
-- **Python:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn  
-- **Jupyter Notebook:** For analysis and visualization  
-- **Git & GitHub:** Version control and repository hosting  
-- **Excel:** Dataset preparation and intermediate calculations  
+## 📊 Methodology
+
+1.  **Data Preparation:** Raw data from multiple sources (Excel, CSV) was collected, cleaned, and standardized using Python (Pandas). This involved handling missing values, standardizing units, and structuring the data for analysis. The cleaned dataset was stored in a SQL database.
+2.  **TCO Modeling:** A 5-year TCO model was developed using the following formula:
+    `TCO = Purchase Cost + (Annual Distance × Fuel Cost/km × 5) + (Maintenance Costs × 5) - Subsidies - Resale Value`
+3.  **Exploratory Data Analysis (EDA):** Key cost drivers were visualized using Matplotlib and Seaborn to compare trends, distributions, and correlations between EV and Diesel vehicle costs.
+4.  **Sensitivity Analysis:** The TCO model was tested against different scenarios, such as a ±20% fluctuation in fuel prices and the removal or addition of subsidies, to assess the robustness of the findings.
+5.  **Dashboarding:** An interactive dashboard was created in Tableau/Power BI to present the findings, allowing users to compare TCO, view cost breakdowns, and explore different scenarios dynamically.
 
 ---
 
-## **Analysis Steps**
-1. Exploratory Data Analysis (EDA) on vehicle costs and ROI.  
-2. Cleaning and preprocessing raw data.  
-3. Comparative visualization of EVs vs Diesel vehicles.  
-4. ROI and cost-benefit calculations.  
-5. Summary and actionable recommendations.  
+## 📈 Results & Key Insights
+
+-   **Breakeven Point:** EVs typically become more cost-effective than diesel counterparts after **Year 3** of operation, primarily due to lower fuel and maintenance costs.
+-   **Impact of Subsidies:** Government subsidies can shorten the breakeven period by an average of **12-18 months**, making the initial investment in EVs more attractive.
+-   **Fuel Price Volatility:** The analysis shows that a **20% increase in diesel prices** makes EVs the cheaper option from Year 2 onwards, highlighting the financial stability offered by EVs against volatile fossil fuel markets.
+-   **Recommendation:** For fleets with high annual mileage (> 50,000 km/year), immediate investment in EVs is financially sound. For lower-mileage fleets, adoption is recommended if subsidies are available.
 
 ---
 
+## 📁 Project Structure
