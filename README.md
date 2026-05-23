@@ -24,7 +24,6 @@ This project followed a structured, multi-phase workflow, leveraging a suite of 
 | **1. Modeling** | **Excel** | Used for initial financial modeling, assumption validation, and building the core TCO calculation engine. |
 | **2. Data Management**| **MS SQL Server** | Used to structure and store all validated input data, creating a single source of truth for the analysis. |
 | **3. Automation** | **Python (Pandas)** | Used to automate the TCO analysis by fetching data from SQL, applying the financial logic, and generating a clean, processed dataset. |
-| **4. Visualization** | **Tableau** | Used to create a final, interactive executive summary dashboard to present the findings to stakeholders. |
 
 ---
 
@@ -35,7 +34,6 @@ This project followed a structured, multi-phase workflow, leveraging a suite of 
     `TCO = Purchase Cost + (Annual Distance × Fuel Cost/km × 5) + (Maintenance Costs × 5) - Subsidies - Resale Value`
 3.  **Exploratory Data Analysis (EDA):** Key cost drivers were visualized using Matplotlib and Seaborn to compare trends, distributions, and correlations between EV and Diesel vehicle costs.
 4.  **Sensitivity Analysis:** The TCO model was tested against different scenarios, such as a ±20% fluctuation in fuel prices and the removal or addition of subsidies, to assess the robustness of the findings.
-5.  **Dashboarding:** An interactive dashboard was created in Tableau/Power BI to present the findings, allowing users to compare TCO, view cost breakdowns, and explore different scenarios dynamically.
 
 ---
 
@@ -63,16 +61,6 @@ The project is organized into a clean and scalable structure to separate data, c
 │   └── 02_insert_data.sql
 ├── 📂 src/
 │   └── tco_analysis.py       # Main Python script for analysis
-└── 📂 visualizations/
-    └── executive_summary.twb   # Final Tableau Workbook
 ```
 
 ---
-
-## 📊 Final Dashboard Preview
-
-Below is a preview of the final executive summary dashboard created in Tableau, which visualizes the key findings of this analysis.
-
-*(**Action:** Add a screenshot of your final Tableau dashboard here. You can do this by dragging and dropping the image into this editor.)*
-
-![TCO Dashboard Preview](https://via.placeholder.com/800x400.png?text=Paste+Your+Dashboard+Screenshot+Here)
